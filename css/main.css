@@ -1,225 +1,33 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/*styles portada*/
-.navbar-toggle{
-  float: left;
-}
-.navHeader{
-  background-color: white;
-}
-.navbar-default .navbar-toggle{
-  border: 0;
-  background-color: white !important;
-  margin-top: 20px;
-}
-a.navbar-brand{
-  position: relative;
-  left: 82px;
-}
-.nav-collapse-list>ul>li>a{
-  color:black;
-  padding: 30px;
-}
-.navbar {
-  margin-bottom: 0px;
-}
-
-/*Hero*/
-.enjoythetravel{
-  position:absolute;
-  width: 300px;
-  height: 200px;
-  right: 0;
-  top: 20%;
-  background-color: #f7b617;
-}
-#hero{
-  position: relative;
-  background: url(../assets/img/taxi.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 90vh;
-  overflow: hidden;
-  color: #fff;
-}
 
 /*styles section informacion*/
 #informacion{
   width: 100%;
   height: 85vh;
   background-color:  #f7b617;
-  /*display: flex;
-  align-items: center;
-  color: #fff;*/
 }
-/*#informacion .rowImage{
-  border-top: 1px solid #fff;
-  border-bottom: 0.1px solid #fff;
-  border-right: 0.1px solid #fff;
-  padding: 28px 0px;
-}*/
 .thumbnail{
   background: none;
   border-color: #fff;
 }
-#informacion .thumbnail{
-  margin: 5% 2% 5% 0;
-  padding: 2% 7%;
+#informacion .thumbnail {
+    margin: 21% 2% 6% 0;
+    padding: 7% 7%;
 }
 #informacion .container{
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: auto;
+  padding-left: 21px;
 }
-/*styles about section conduce*/
-.conduce-content{
-  position:absolute;
-  width: 450px;
-  height: 70vh;
-  right: 0;
-  top: 0;
-  background-color: #2b2b2b;
-  opacity: 0.7;
-  display: flex;
-  align-items: center;
-}
-.btn-warning{
-  opacity: 100!important;
-  background-color:  #f7b617!important;
-  padding: 14px 35px!important;
-}
-#conduce{
-  position: relative;
-  background: url(../assets/img/conduce.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 70vh;
-  color: #fff;
-}
-/*styles about section tarifa*/
-.form-control {
-  display: inline-block!important;
-  width: auto!important;
-}
-input[type="text"]{
-    background-color: #f7b617;;
-}
-input[type="text"]::-webkit-input-placeholder{
-    color: #fff;
-}
-#tarifa{
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  background-color:  #f7b617;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-#map {
-  height: 400px;
-  width: 100%;
-}
-/*style about footer*/
-.row-footer{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-.span-footer{
-  padding-top: 200px;
-}
-#footer{
-  width: 100%;
-  height: 70vh;
-  background-color:  #2b2b2b;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-#footer li{
-  list-style-type: none;
-  padding: 7px;
-}
-#footer img{
-  width: 150px;
-  margin: 7px;
-}
+
 
 @media (min-width: 768px){
-  a.navbar-brand>img{
-    position: relative;
-    top: 0px;
-    left: 69px;
-  }
-  .nav-collapse-list ul li{
-    display: inline-block;
-    width:120px;
-    text-align: center;
-    position: relative;
-    top: 14px;
-  }
-  .nav-collapse-list>ul>li>a{
-    padding: 10px;
-  }
-  .navbar {
-    margin-bottom: 0px;
-  }
-  .navHeader{
-    padding-bottom: 20px;
-  }
-  .enjoythetravel{
-    position:absolute;
-    width: 500px;
-    height: 320px;
-    right: 0;
-    top: 20%;
-    padding-left: 20px;
-    background-color: #f7b617;
-  }
 
-  .enjoythetravel hr{
-    margin-top: 30px;
-    width: 38%;
-  }
-  .enjoythetravel hr::after {
-    content: "O bien";
-    position: relative;
-    top: -15px;
-    left: 35%;
-    width: 80px;
-    background-color: #f7b617 ;
-    padding: 0 50px;
-  }
-
-  #informacion .thumbnail {
-      margin: 21% 2% 6% 0;
-      padding: 7% 7%;
+  #informacion .thumbnail{
+    margin: 5% 2% 5% 0;
+    padding: 2% 7%;
   }
   #informacion .container{
-    margin-left: auto;
-    padding-left: 21px;
-  }
-
-  .btn{
-    margin-top: 14px;
-    font-weight: bold!important;
-
-  }
-
-  #hero{
-    position: relative;
-    background: url(../assets/img/taxi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 90vh;
-    overflow: hidden;
-    color: #fff;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
 }
