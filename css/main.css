@@ -8,22 +8,27 @@
 .navbar-toggle{
   float: left;
 }
+
 .navHeader{
   background-color: white;
 }
+
 .navbar-default .navbar-toggle{
   border: 0;
   background-color: white !important;
   margin-top: 20px;
 }
+
 a.navbar-brand{
   position: relative;
   left: 82px;
 }
+
 .nav-collapse-list>ul>li>a{
   color:black;
   padding: 30px;
 }
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -85,23 +90,14 @@ a.navbar-brand{
   .nav-collapse-list>ul>li>a{
     padding: 10px;
   }
+
   .navbar {
     margin-bottom: 0px;
   }
+
   .navHeader{
     padding-bottom: 20px;
   }
-  /*stilos hero*/
-  .enjoythetravel{
-    position:absolute;
-    width: 300px;
-    height: 200px;
-    right: 0;
-    top: 20%;
-    background-color: #f7b617;
-  }
-  .conduce-content{
-    width: 100%;
-  }
+
 
 }
