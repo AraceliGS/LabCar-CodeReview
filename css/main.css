@@ -3,4 +3,64 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /*styles portada*/
+.navbar-toggle{
+  float: left;
+}
+
+.navHeader{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+  border: 0;
+  background-color: white !important;
+  margin-top: 20px;
+}
+
+a.navbar-brand{
+  position: relative;
+  left: 82px;
+}
+
+.nav-collapse-list>ul>li>a{
+  color:black;
+  padding: 30px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+/*style section hero*/
+
+
+@media (min-width: 768px){
+  a.navbar-brand>img{
+    position: relative;
+    top: 0px;
+    left: 69px;
+  }
+
+  .nav-collapse-list ul li{
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    position: relative;
+    top: 14px;
+  }
+
+  .nav-collapse-list>ul>li>a{
+    padding: 10px;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .navHeader{
+    padding-bottom: 20px;
+  }
+
+
+}
