@@ -63,4 +63,5 @@ function initMap() {
     e.preventDefault();
     calcularRuta(direccionService, direccionDisplay);
   });
+
 }

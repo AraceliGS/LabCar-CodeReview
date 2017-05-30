@@ -3,8 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   color: #fff;
+  background-color: #f7b617;
 }
 p {
   font-size: 1.5em;
@@ -14,56 +16,47 @@ p {
   padding: 10px;
   border-color: #fff;
 }
-.display-none {
-  display: block;
+
+.btn-default{
+  margin-top: 14px;
+  font-weight: bold;
 }
+
 /*styles portada*/
-/*.navbar-toggle{
-  float: left!important;
+.navbar-toggle{
+  float: left;
 }
+
+.navHeader{
+  background-color: white;
+}
+
 .navbar-default .navbar-toggle{
-  border: 0!important;
+  border: 0;
+  margin-top: 20px;
 }
-.nav-collapse-list ul li{
-  display: inline-block;
-  margin-right: 49px;
+
+a.navbar-brand{
+  position: relative;
+  left: 82px;
 }
-.navbar-labcar a{
-  padding-bottom: 56px
+
+.nav-collapse-list>ul>li>a{
+  color:black;
+  padding: 30px;
 }
-.navbar-labcar .row{
-  display: flex;
-  align-items: center;
-}
+
 .navbar {
-  margin-bottom: 0px!important;
-}*/
-/*style section hero*/
-/*.divobien{
-  border-bottom: 1px solid #fff;
-  padding-bottom: 21px;
+  margin-bottom: 0px;
 }
-.obien{
-  position: absolute;
-  left: 130px;
-  bottom: 0px;
-  background-color: #f7b617;
-  padding: 0 80px;
-}
+/*Hero*/
 .enjoythetravel{
   position:absolute;
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   right: 0;
   top: 20%;
   background-color: #f7b617;
-}
-.btn{
-  margin-top: 14px;
-  font-weight: bold!important;
-}
-.container-informacion {
-    margin-left: 0px !important;
 }
 #hero{
   position: relative;
@@ -71,29 +64,27 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  /*width: 100%;*/
   height: 90vh;
   overflow: hidden;
   color: #fff;
 }
-
 /*styles section informacion*/
-/*#informacion{
-  position: relative;
+#informacion{
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background-color:  #f7b617;
-  display: flex;
-  align-items: center;
-  color: #fff;
 }
-#informacion .rowImage{
-  border-top: 1px solid #fff;
-  border-bottom: 0.1px solid #fff;
-  border-right: 0.1px solid #fff;
-  padding: 28px 0px;
-}*/
-/*styles about section conduce*/
+
+#informacion .thumbnail {
+  margin: 21% 2% 6% 0;
+  padding: 7% 7%;
+}
+#informacion .container{
+  margin-left: auto;
+  padding-left: 21px;
+}
+
+/*Styles Conduce*/
 .conduce-content .content {
   padding: 5% 14px;
   background-color: rgba(52, 52, 52, 0.45);
@@ -108,94 +99,106 @@ p {
   background-size: cover;
   background-position: center;
 }
-/*styles about section tarifa*/
 
+/*styles about section tarifa*/
 .form-group input[type="text"]{
-    background:none;
-    border: 1px solid #fff;
-    width: 70%;
-    display: inline-block;
-    color: #fff;
+  background:none;
+  border: 1px solid #fff;
+  width: 70%;
+  display: inline-block;
+  color: #fff;
 }
 input[type="text"]::-webkit-input-placeholder{
-    color: #fff;
+  color: #fff;
 }
 #tarifa{
   width: 100%;
-  height: 80vh;
-  background-color:  #f7b617;
-  display: flex;
-  align-items: center;
-  color: #fff;
+  height: 40vh;
+  padding: 5% ;
 }
-#map {
-  height: 400px;
-  width: 100%;
-}
+
 #calcTarifa {
   width: 250px;
-  height: 150px;
+  height: 100px;
   color: #2b2b2b;
   font-size: 1.2em;
   margin-top: 20px;
 }
-/*style about footer*/
-/*.row-footer{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-.span-footer{
-  padding-top: 200px;
-}
-#footer{
-  width: 100%;
-  height: 70vh;
-  background-color:  #2b2b2b;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-#footer li{
-  list-style-type: none;
-  padding: 7px;
-}
-#footer img{
-  width: 150px;
-  margin: 7px;
-}*/
 
-/*@media (max-width: 768px){*/
+@media (min-width: 768px){
+  a.navbar-brand>img{
+    position: relative;
+    top: 0px;
+    left: 69px;
+  }
+
   .nav-collapse-list ul li{
-    display: block;
-    margin-right: 49px;
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    position: relative;
+    top: 14px;
   }
-  .navbar-labcar .row {
-    display: block;
+
+  .nav-collapse-list>ul>li>a{
+    padding: 10px;
   }
-  .nav-collapse-list ul li {
-    padding: 14px 0px;
+
+  .navbar {
+    margin-bottom: 0px;
   }
+
+  .navHeader{
+    padding-bottom: 20px;
+  }
+
+  /*Hero*/
   .enjoythetravel{
     position:absolute;
-    width: 200px;
-    height: 300px;
+    width: 500px;
+    height: 320px;
     right: 0;
     top: 20%;
+    padding-left: 20px;
     background-color: #f7b617;
   }
-  .conduce-content{
+  .enjoythetravel hr{
+    margin-top: 30px;
+    width: 38%;
+  }
+  .enjoythetravel hr::after {
+    content: "O bien";
+    position: relative;
+    top: -15px;
+    left: 35%;
+    width: 80px;
+    background-color: #f7b617 ;
+    padding: 0 50px;
+  }
+
+  #hero{
+    position: relative;
+    background: url(../assets/img/taxi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 90vh;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  /*Styles Informacion*/
+  #informacion .thumbnail{
+    margin: 5% 2% 5% 0;
+    padding: 2% 7%;
+  }
+  #informacion .container{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  /*Style Tarifa*/
+  #map {
+    height: 400px;
     width: 100%;
-  }
-  .conduce-content h1{
-    font-size: 2.1em;
-  }
-  #informacion .rowImage{
-    border: 1px solid #fff;
-    padding: 28px 0px;
-    margin: 0!important;
-  }
-  #footer img{
-    width: 100px;
-    margin: 7px;
   }
 }
