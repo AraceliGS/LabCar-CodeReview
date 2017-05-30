@@ -3,53 +3,39 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /*styles portada*/
 .navbar-toggle{
-  float: left!important;
+  float: left;
+}
+.navHeader{
+  background-color: white;
 }
 .navbar-default .navbar-toggle{
-  border: 0!important;
+  border: 0;
+  background-color: white !important;
+  margin-top: 20px;
 }
-.nav-collapse-list ul li{
-  display: inline-block;
-  margin-right: 49px;
+a.navbar-brand{
+  position: relative;
+  left: 82px;
 }
-.navbar-labcar a{
-  padding-bottom: 56px
-}
-.navbar-labcar .row{
-  display: flex;
-  align-items: center;
+.nav-collapse-list>ul>li>a{
+  color:black;
+  padding: 30px;
 }
 .navbar {
-  margin-bottom: 0px!important;
+  margin-bottom: 0px;
 }
-/*style section hero*/
-.divobien{
-  border-bottom: 1px solid #fff;
-  padding-bottom: 21px;
-}
-.obien{
-  position: absolute;
-  left: 130px;
-  bottom: 0px;
-  background-color: #f7b617;
-  padding: 0 80px;
-}
+
+/*Hero*/
 .enjoythetravel{
   position:absolute;
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   right: 0;
   top: 20%;
   background-color: #f7b617;
-}
-.btn{
-  margin-top: 14px;
-  font-weight: bold!important;
-}
-.container-informacion {
-    margin-left: 0px !important;
 }
 #hero{
   position: relative;
@@ -57,38 +43,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  /*width: 100%;*/
   height: 90vh;
   overflow: hidden;
   color: #fff;
 }
 
 /*styles section informacion*/
-#informacion{
-  width: 100%;
-  height: 85vh;
-  background-color:  #f7b617;
-  /*display: flex;
-  align-items: center;
-  color: #fff;*/
-}
-/*#informacion .rowImage{
-  border-top: 1px solid #fff;
-  border-bottom: 0.1px solid #fff;
-  border-right: 0.1px solid #fff;
-  padding: 28px 0px;
-}*/
-.thumbnail{
-  background: none;
-  border-color: #fff;
-}
-#informacion .thumbnail{
-  margin: 5% 2% 5% 0;
-  padding: 2% 7%;
+#informacion .thumbnail {
+    margin: 21% 2% 6% 0;
+    padding: 7% 7%;
 }
 #informacion .container{
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: auto;
+  padding-left: 21px;
 }
 /*styles about section conduce*/
 .conduce-content{
@@ -165,41 +132,24 @@ input[type="text"]::-webkit-input-placeholder{
   margin: 7px;
 }
 
-@media (max-width: 768px){
-  .nav-collapse-list ul li{
-    display: block;
-    margin-right: 49px;
+@media (min-width: 768px){
+  /*information section*/
+  .thumbnail{
+    background: none;
+    border-color: #fff;
   }
-  .navbar-labcar .row {
-    display: block;
-  }
-  .nav-collapse-list ul li {
-    padding: 14px 0px;
-  }
-  .enjoythetravel{
-    position:absolute;
-    width: 200px;
-    height: 300px;
-    right: 0;
-    top: 20%;
-    background-color: #f7b617;
-  }
-  .conduce-content{
+  #informacion{
     width: 100%;
+    height: 85vh;
+    background-color:  #f7b617;
   }
-  .conduce-content h1{
-    font-size: 2.1em;
-  }
-  #informacion .thumbnail {
-      margin: 21% 2% 6% 0;
-      padding: 7% 7%;
+  #informacion .thumbnail{
+    margin: 5% 2% 5% 0;
+    padding: 2% 7%;
   }
   #informacion .container{
-    margin-left: auto;
-    padding-left: 21px;;
+    margin-left: 0px;
+    padding-left: 0px;
   }
-  #footer img{
-    width: 100px;
-    margin: 7px;
-  }
+  /*end information section*/
 }
