@@ -3,27 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*styles portada*/
-.navbar-toggle{
-  float: left!important;
-}
-.navbar-default .navbar-toggle{
-  border: 0!important;
-}
-.nav-collapse-list ul li{
-  display: inline-block;
-  margin-right: 49px;
-}
-.navbar-labcar a{
-  padding-bottom: 56px
-}
-.navbar-labcar .row{
-  display: flex;
-  align-items: center;
-}
-.navbar {
-  margin-bottom: 0px!important;
-}
+
+/*Hero*/
 .enjoythetravel{
   position:absolute;
   width: 500px;
