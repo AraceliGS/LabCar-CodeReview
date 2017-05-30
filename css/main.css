@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+/*styles portada*/
+.navbar-toggle{
+  float: left;
+}
+.navHeader{
+  background-color: white;
+}
+.navbar-default .navbar-toggle{
+  border: 0;
+  background-color: white !important;
+  margin-top: 20px;
+}
+a.navbar-brand{
+  position: relative;
+  left: 82px;
+}
+.nav-collapse-list>ul>li>a{
+  color:black;
+  padding: 30px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
 /*Hero*/
 .enjoythetravel{
   position:absolute;
@@ -41,22 +65,33 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  /*width: 100%;*/
   height: 90vh;
   overflow: hidden;
   color: #fff;
 }
-@media (max-width: 768px){
+@media (min-width: 768px){
+  a.navbar-brand>img{
+    position: relative;
+    top: 0px;
+    left: 69px;
+  }
   .nav-collapse-list ul li{
-    display: block;
-    margin-right: 49px;
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    position: relative;
+    top: 14px;
   }
-  .navbar-labcar .row {
-    display: block;
+  .nav-collapse-list>ul>li>a{
+    padding: 10px;
   }
-  .nav-collapse-list ul li {
-    padding: 14px 0px;
+  .navbar {
+    margin-bottom: 0px;
   }
+  .navHeader{
+    padding-bottom: 20px;
+  }
+  /*stilos hero*/
   .enjoythetravel{
     position:absolute;
     width: 300px;
@@ -68,16 +103,5 @@
   .conduce-content{
     width: 100%;
   }
-  .conduce-content h1{
-    font-size: 2.1em;
-  }
-  #informacion .rowImage{
-    border: 1px solid #fff;
-    padding: 28px 0px;
-    margin: 0!important;
-  }
-  #footer img{
-    width: 100px;
-    margin: 7px;
-  }
+
 }
