@@ -31,6 +31,26 @@ a.navbar-brand{
 .navbar {
   margin-bottom: 0px;
 }
+/*Hero*/
+.enjoythetravel{
+  position:absolute;
+  width: 300px;
+  height: 200px;
+  right: 0;
+  top: 20%;
+  background-color: #f7b617;
+}
+#hero{
+  position: relative;
+  background: url(../assets/img/taxi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 90vh;
+  overflow: hidden;
+  color: #fff;
+}
+
 /*styles section informacion*/
 #informacion{
   width: 100%;
@@ -76,6 +96,42 @@ a.navbar-brand{
 
   .navHeader{
     padding-bottom: 20px;
+  }
+  .enjoythetravel{
+    position:absolute;
+    width: 500px;
+    height: 320px;
+    right: 0;
+    top: 20%;
+    padding-left: 20px;
+    background-color: #f7b617;
+  }
+  .enjoythetravel hr{
+    margin-top: 30px;
+    width: 38%;
+  }
+  .enjoythetravel hr::after {
+    content: "O bien";
+    position: relative;
+    top: -15px;
+    left: 35%;
+    width: 80px;
+    background-color: #f7b617 ;
+    padding: 0 50px;
+  }
+  .btn{
+    margin-top: 14px;
+    font-weight: bold!important;
+  }
+  #hero{
+    position: relative;
+    background: url(../assets/img/taxi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 90vh;
+    overflow: hidden;
+    color: #fff;
   }
 
   #informacion .thumbnail{
