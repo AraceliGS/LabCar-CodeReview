@@ -2,8 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color:#fff;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  color:#fff;
+
+}
+
+a:hover{
+  text-decoration: none;
+  color:#fff;
+}
 
 #footer{
   width: 100%;
@@ -11,47 +25,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-}
-
-/*style about footer*/
-
-/*
-.row-footer{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-
-.span-footer{
-  padding-top: 200px;
-}
-
-
-/*
-#footer li{
-  list-style-type: none;
-  padding: 7px;
-}
-*/
-
-/*Contenedores del  logo y el addrress del foote */
-
-#footer div.row.una-columna div.col-md-12 {
-  border:1px solid pink;
-  margin-bottom: 20px;
-  padding-top:20px;
-}
-
-div.row.cuatro-columnas div.col-md-3 {
-  border: 1px solid yellow;
-  min-height: 400px;
-
-}
-
-
-ul.icons-desktop {
-  border:1px solid red;
-  position: relative;
-  
+  padding-top: 20px;
 }
 
 #footer img{
@@ -59,26 +33,80 @@ ul.icons-desktop {
   margin: 7px;
 }
 
+#footer hr{
+  margin:0;
+  margin-top: 10px;
+}
+
+#footer address {
+  padding-top: 10px;
+}
+
+
+/*Fila de cuatro columnas que contiene la info central*/
+
+div.row.cuatro-columnas div.col-md-3 {
+  min-height: 400px;
+  padding-top: 15px;
+  line-height: 3em;
+
+}
+
+div.row.cuatro-columnas div.col-md-3:nth-child(1),
+div.row.cuatro-columnas div.col-md-3:nth-child(4) {
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+ul.icons-desktop>li {
+  display: inline-block;
+  padding: 0;
+}
+
+ul.icons-desktop>li a {
+  padding: 5px;
+}
+
+ul.icons-desktop>li a:hover {
+  color:black;
+}
+
+
 @media (max-width: 768px){
   #footer > img{
     width: 100px;
     margin: 7px;
   }
 
+div.row.cuatro-columnas div.col-md-3 {
+  
+  min-height: 370px;
+  padding-top: 15px;
+  line-height: 3em;
+  text-align: left; 
+}
 
 ul.nav.navbar-nav.icons-mobile>li {
   display: inline-block;
-  border:1px solid blue;
   padding:0; 
 }
 
 ul.nav.navbar-nav.icons-mobile>li a {
-  border:1px solid red;
-  padding: 5px;   
+  padding: 2px;   
 }
 
 
-#footer > div > div.row.cuatro-columnas > div:nth-child(1) > ul
-
+div.row.cuatro-columnas div.col-md-3:nth-child(1),
+div.row.cuatro-columnas div.col-md-3:nth-child(4) {
+  display: block;
 }
 
+#footer > div > div.row.cuatro-columnas > div:nth-child(4) > div.text-center > img {
+  width: 100px;
+}
+
+
+}
