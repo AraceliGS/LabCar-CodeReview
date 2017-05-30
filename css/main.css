@@ -49,13 +49,31 @@ a.navbar-brand{
 }
 
 /*styles section informacion*/
-#informacion .thumbnail {
-    margin: 21% 2% 6% 0;
-    padding: 7% 7%;
+#informacion{
+  width: 100%;
+  height: 85vh;
+  background-color:  #f7b617;
+  /*display: flex;
+  align-items: center;
+  color: #fff;*/
+}
+/*#informacion .rowImage{
+  border-top: 1px solid #fff;
+  border-bottom: 0.1px solid #fff;
+  border-right: 0.1px solid #fff;
+  padding: 28px 0px;
+}*/
+.thumbnail{
+  background: none;
+  border-color: #fff;
+}
+#informacion .thumbnail{
+  margin: 5% 2% 5% 0;
+  padding: 2% 7%;
 }
 #informacion .container{
-  margin-left: auto;
-  padding-left: 21px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 /*styles about section conduce*/
 .conduce-content{
@@ -133,23 +151,75 @@ input[type="text"]::-webkit-input-placeholder{
 }
 
 @media (min-width: 768px){
-  /*information section*/
-  .thumbnail{
-    background: none;
-    border-color: #fff;
+  a.navbar-brand>img{
+    position: relative;
+    top: 0px;
+    left: 69px;
   }
-  #informacion{
-    width: 100%;
-    height: 85vh;
-    background-color:  #f7b617;
+  .nav-collapse-list ul li{
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    position: relative;
+    top: 14px;
   }
-  #informacion .thumbnail{
-    margin: 5% 2% 5% 0;
-    padding: 2% 7%;
+  .nav-collapse-list>ul>li>a{
+    padding: 10px;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+  .navHeader{
+    padding-bottom: 20px;
+  }
+  .enjoythetravel{
+    position:absolute;
+    width: 500px;
+    height: 320px;
+    right: 0;
+    top: 20%;
+    padding-left: 20px;
+    background-color: #f7b617;
+  }
+
+  .enjoythetravel hr{
+    margin-top: 30px;
+    width: 38%;
+  }
+  .enjoythetravel hr::after {
+    content: "O bien";
+    position: relative;
+    top: -15px;
+    left: 35%;
+    width: 80px;
+    background-color: #f7b617 ;
+    padding: 0 50px;
+  }
+
+  #informacion .thumbnail {
+      margin: 21% 2% 6% 0;
+      padding: 7% 7%;
   }
   #informacion .container{
-    margin-left: 0px;
-    padding-left: 0px;
+    margin-left: auto;
+    padding-left: 21px;
   }
-  /*end information section*/
+
+  .btn{
+    margin-top: 14px;
+    font-weight: bold!important;
+
+  }
+
+  #hero{
+    position: relative;
+    background: url(../assets/img/taxi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 90vh;
+    overflow: hidden;
+    color: #fff;
+  }
+
 }
