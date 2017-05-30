@@ -1,8 +1,8 @@
 function initMap() {
-    var uluru = {lat: -12.1190457, lng: -77.0408834};
+    var coordsPeru = {lat: -9.082632, lng: -84.0431127};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 5,
-      center: uluru
+      zoom: 4,
+      center: coordsPeru
     });
 
   	var latitud,longitud;
@@ -20,9 +20,10 @@ function initMap() {
     		map.setCenter({lat:latitud, lng:longitud});
     	}
     	var error = function (error) {
-    		window.alert(" failed it means you probably did not give permission for the browser");
+    		window.alert("Tu navegador no soporta la API de geolocalizacion");
     	}
-      function buscar() {
+      function buscar(e) {
+        e.preventDefault();
         if(navigator.geolocation){
           navigator.geolocation.getCurrentPosition(encontrar,error);
         }
@@ -34,13 +35,32 @@ function initMap() {
     new google.maps.places.Autocomplete(puntoDestino);
 
     var direccionService = new google.maps.DirectionsService;
-    // console.log(direccionService);
-    var direcctionDisplay =new google.maps.DirectionsRenderer;
-    // console.log(direcctionDisplay);
+    var direccionDisplay =new google.maps.DirectionsRenderer;
 
-    // var trazrruta = function (direccionService, direcctionDisplay) {
-    //   direccionService.route();
-    // }
+    var calcularRuta = function (direccionService, direccionDisplay) {
+      var request = {
+        origin: puntoPartida.value,
+        destination: puntoDestino.value,
+        travelMode: 'DRIVING'
+        };
+        direccionService.route(request, function(result, status) {
+        if (status == 'OK') {
+          var distancia = result.routes[0].legs[0].distance.value/1000;
+          var duracion = result.routes[0].legs[0].duration.text;
+          var costo = (distancia*1.75).toFixed(2);
+
+          document.getElementById('calcTarifa').innerHTML="";
+          document.getElementById('calcTarifa').innerHTML=`Costo: S/. ${costo} <br> Duración: ${duracion}`;
+          direccionDisplay.setDirections(result);
+        }
+      });
+      direccionDisplay.setMap(map);
+    }
+
     window.addEventListener("load",buscar);
+    document.getElementById('trazarRuta').addEventListener("click",function(e){
+      e.preventDefault();
+      calcularRuta(direccionService, direccionDisplay);
+    });
 
 }
