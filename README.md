@@ -9,6 +9,13 @@ Proyecto final del Sprint4 del Bootcamp de Laboratoria < l >
 - El proyecto se baso en hacer una página web que ofrece el servicio de taxi, dar la ubicación actual del usuario y le permite colocar de que punto a que punto se dirige, además da la tarifa.
 - En el proyecto se uso Bootstrap.
 
+## Recursos
+![recursos](assets/img-read/recursos.jpg)
+
+## Fuentes consultadas:
+- Bootstrap: url(http://getbootstrap.com/components/)
+- Google MapsAPI: url(https://developers.google.com/maps/?hl=es-419)
+
 ## LabCar: contenido
 
 ### Nav-Hero
