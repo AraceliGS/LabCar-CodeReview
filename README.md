@@ -42,7 +42,7 @@ google.maps.DirectionsRenderer, que en términos simples se encargará de traduc
 
 
 ### Footer
-Tiene varios links, se uso flexbox y la grilla de bootstrap <br/>
+Tiene varios links, se uso flexbox y el grid de bootstrap <br/>
 ![Footer](assets/img-read/footer.jpg)
 
 ## Desarrollado con:
