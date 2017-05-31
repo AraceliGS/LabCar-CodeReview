@@ -33,10 +33,10 @@ En esta sección aparecerá el mapa con nuestra ubicación, al permitirle al nav
   type="text/javascript"></script> <br/>
 ![Función para obtener ubicación](assets/img-read/miUbicacion.jpg)
 
--Para trazar la ruta se hace uso de los recursos de la Api de Google Maps:<br/>
+- Para trazar la ruta se hace uso de los recursos de la Api de Google Maps:<br/>
 ![Función para trazar ruta](assets/img-read/trazar.jpg)
 
--Para trazar la ruta como hemos visto en la función anterior se hizo uso de los objetos que nos proporciona esta api: google.maps.DirectionsService, el cual se encarga de obtener las coordenadas y con que medio te movilizas para indicarte las inflexiones;
+- Para trazar la ruta como hemos visto en la función anterior se hizo uso de los objetos que nos proporciona esta api: google.maps.DirectionsService, el cual se encarga de obtener las coordenadas y con que medio te movilizas para indicarte las inflexiones;
 google.maps.DirectionsRenderer, que en términos simples se encargará de traducir la ruta y plasmarlo por medio de líneas. Veamos como funciona: <br/>
 ![gif-tarifa](assets/img-read/trazar.gif)
 
