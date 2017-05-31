@@ -15,7 +15,7 @@ Proyecto final del Sprint4 del Bootcamp de Laboratoria < l >
 El nav en la versión mobile aparece como una menú tipo hamburguesa.<br/>
 ![gif-nav](assets/img-read/nav-hero.gif)
 
-En la versión desktop se visualiza así:
+En la versión desktop se visualiza así:<br/>
 ![Navbar](assets/img-read/nav-hero.jpg)
 
 ### Información
@@ -30,10 +30,10 @@ Aquí se aplican conocimientos previos como hacer un background con color en rgb
 ### Tarifa
 En esta sección aparecerá el mapa con nuestra ubicación, al permitirle al navegador que acceda a nuestros datos, para lo cual empleamos el Api de HTML5 y el Api de Google Maps<br/>
 - Para usar el Api de Google Maps necesitamos colocar este script en nuestro html (En este script hay que colocar nuestra key, generada en https://developers.google.com/maps/documentation/javascript/places?hl=es-419#place_searches): <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY&callback=FUNCION&libraries=places"
-  type="text/javascript"></script>
+  type="text/javascript"></script> <br/>
 ![Función para obtener ubicación](assets/img-read/miUbicacion.jpg)
 
--Para trazar la ruta se hace uso de los recursos de la Api de Google Maps:
+-Para trazar la ruta se hace uso de los recursos de la Api de Google Maps:<br/>
 ![Función para trazar ruta](assets/img-read/trazar.jpg)
 
 -Para trazar la ruta como hemos visto en la función anterior se hizo uso de los objetos que nos proporciona esta api: google.maps.DirectionsService, el cual se encarga de obtener las coordenadas y con que medio te movilizas para indicarte las inflexiones;
